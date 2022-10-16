@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="titlePage">
+        GESTION ORTOPEDIC
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onOrtopedicSubmit()">
+                    <div>
+                        <label for="ortopedicId">Id</label>
+                        <p></p>
+                        <input type="text" name="ortopedicId" id="ortopedicId">
+                    </div>
+                    <div>
+                        <label for="ortopedicName">Name</label>
+                        <input type="text" name="ortopedicName" id="ortopedicName">
+                    </div>
+                    <div>
+                        <label for="ortopedicBrand">Brand</label>
+                        <input type="text" name="ortopedicBrand" id="ortopedicBrand">
+                    </div>
+                    <div>
+                        <label for="ortopedicYear">Year</label>
+                        <input type="text" name="ortopedicYear" id="ortopedicYear">
+                    </div>
+                    <div>
+                        <label for="ortopedicDescription">Description</label>
+                        <input type="text" name="ortopedicDescription" id="ortopedicDescription">
+                    </div>
+                    <div>
+                        <label for="ortopedicCategory">Category</label>
+                        <input type="text" name="ortopedicCategory" id="ortopedicCategory">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Create">
+                    </div>
+                </form>
+                <button onClick="ortopedicUpdate(this)">Edit</button> 
+                <td>
+                    <table class="list" id="ortopedicList">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Brand</th>
+                                <th>Year</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h4 class="titlePage">
+            <a href="/client.html">GESTION CLIENTES</a>
+        </h4>
+        <h4 class="titlePage">
+            <a href="/ortopedic.html">GESTION ORTOPEDIC</a>
+        </h4>
+        <h4 class="titlePage">
+            <a href="/messages.html">GESTION MENSAJES</a>
+        </h4>
+        <h4 class="titlePage">
+            <a href="/reservation.html">GESTION RESERVACIONES</a>
+        </h4>
+        <h4 class="titlePage">
+            <a href="/index.html">GESTION CATEGORY</a>
+        </h4>
+    </div>
+    <script type="text/javascript" src="./js/ortopedic.js"></script>
+</body>
+</html>
